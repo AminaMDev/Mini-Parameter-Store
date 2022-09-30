@@ -1,2 +1,5 @@
 django
 djangorestframework
+django-rest-swagger
+cryptography
+python-dotenv
