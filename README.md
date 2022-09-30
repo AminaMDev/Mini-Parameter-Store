@@ -1,5 +1,63 @@
 # Mini Parameter Store
 
+Mini Parameter Store is REST API project implemented in Django REST framework. Swagger is added for documentation of API.
+
+------------------------------------------------------------------------
+Pre-requisite
+-----
+- python 3.9
+- pip3
+
+```
+brew install python 3.9.4
+```
+
+**virtualenv** is a tool that is used to create a virtual environment that install all
+python packages and python from that environment.
+
+**Installation**
+
+```
+pip3 install virtualenv
+```
+
+-----------------------------------------------------------------------
+Setup
+-----
+
+Create .env file using content of .env.example and update credentials where required.
+
+    $ cd parameterstore && touch .env && .env << .env.example
+
+Create and Activate virtual environment
+
+```
+cd ..
+python3.9 -m venv env
+source env/bin/activate
+```
+
+Install all required packages in ***requirements.txt***
+
+    $ pip install -r requirements.txt
+
+------------------------------------------------------------------------
+
+Run Server
+----------
+
+Migrate database to load schema changes
+
+    $ python manage.py db upgrade
+
+Run flask server
+
+    $ python manage.py runserver
+
+```
+Server will be running on http://127.0.0.1:8000/
+```
+-------------------------------------------------------------------------
 To see how you approach software development in an environment like ours, we'd like you to implement a simple parameter store accessible via a REST API.
 
 You can pick your technologies, but we're a Python/Django shop, so we thought of the problem that way.  Just be ready to talk about why you picked the tools you did.

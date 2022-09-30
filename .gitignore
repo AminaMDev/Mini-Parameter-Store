@@ -1,5 +1,4 @@
 env
-parameterstore/parameterstore/__pycache__
-parameterstore/api/__pycache__
-parameterstore/api/migrations/__pycache__
+__pycache__/
 .env
+.DS_Store
